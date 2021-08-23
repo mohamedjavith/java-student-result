@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax Project</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+</head>
+<body>
+	
+	<input type="text" id="num" placeholder="Enter number"><br>
+	<button onclick="ajaxServlet()">Submit</button>
+	
+	<table border="2px" id="result"></table><br>
+	<input type="text" id="name" placeholder="Enter Name"><br>
+	<input type="text" id="age" placeholder="Enter Age"><br>
+	<button id="postmethod">Post Method</button><br>
+	<h3 id="result2"></h3>
+	<button id="gettable">Show Data</button><br>
+	<table border="2px" id="result3"></table><br>
+	<script>
+		function ajaxServlet(){
+			var num = $("#num").val();
+			
+			$.ajax({
+				url:'servletpage',
+				method:'GET',
+				data:{name:num},
+				success:function(resultText){
+					$('#result').html(resultText);
+					},
+				error:function(jqXHR, exception){
+					console.log('Error occured!!'+jqXHR.error);
+					}
+			});
+		}
+		
+	$(document).ready(function(){
+		$('#postmethod').click(function(){
+			$.post('servletpage',
+			{
+				name:$('#name').val(),
+				age:$('#age').val()
+			},
+			function(data,status){
+				$('#result2').html(data);
+			});
+		});
+		$('#gettable').click(function(){
+			$.get('fetchdata',function(data,status){
+				$('#result3').html(data);
+			});
+		});
+	});
+		
+	</script>
+</body>
+</html>

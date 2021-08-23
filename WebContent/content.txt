@@ -1,0 +1,6 @@
+student details upload.
+student mark upload staff only.
+staff login.
+student login.
+student detail view.
+student result view.
