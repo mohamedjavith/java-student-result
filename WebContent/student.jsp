@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 <!-- <script type="text/javascript" src="index.js"></script> -->
 <link rel="stylesheet" href="style.css">
-<title>Insert title here</title>
+<title>Student Login</title>
 </head>
 <body>
 	<!-- Nav Bar -->
@@ -19,6 +19,7 @@
 </ul>
 <div id="studentLogin">
 <form action="fetchdata" method="post">
+<h1>Student Login</h1>
 	<center><label id="loginerror"></label></center><br>
     <label for="fname">Student Id</label>
     <input type="text" id="sid" name="sid" placeholder="Enter Student Id">
@@ -28,10 +29,6 @@
   	
   	<button id="studentLoginSubmit" type="submit">Submit</button>
   	</form>
- </div>
- <table id="studentdetail"></table>
- <div id="logincontent">
- <button id="showresult">Result</button>
  </div>
 </body>
 </html>

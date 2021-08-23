@@ -16,5 +16,18 @@
   <li><a class="active" href="">Staffs</a></li>
   <li><a href="management.jsp">Management</a></li>
 </ul>
+<div id="studentLogin">
+<form action="staffhomepage" method="post">
+<h1>Staff Login</h1>
+	<center><label id="loginerror"></label></center><br>
+    <label for="fname">Staff Id</label>
+    <input type="text" id="sid" name="staffid" placeholder="Enter Staff Id">
+
+    <label for="lname">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password..">
+  	
+  	<button id="studentLoginSubmit" type="submit">Submit</button>
+  	</form>
+ </div>
 </body>
 </html>

@@ -16,7 +16,7 @@
   <li><a href="staff.jsp">Staffs</a></li>
   <li><a href="management.jsp">Management</a></li>
 </ul>
-	<h3>Student</h3>
+<!-- 	<h3>Student</h3>
 	<div>
   
     <label for="fname">Student Id</label>
@@ -25,7 +25,7 @@
     <label for="lname">Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Enter Student name..">
   	
-  <button id="submit1">Submit</button>
+  <button id="submit1">Submit</button> -->
   
 
 </div>
