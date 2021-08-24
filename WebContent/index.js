@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('#addstudentform').hide();
+	$('#resulttable').hide();
 	$('#addstudent').click(function(){
 		
 		$('#addstudentform').toggle();
@@ -20,5 +21,7 @@ $(document).ready(function(){
 				  		$('#resulttable').html(data);
 							
 			});
+			$('#resulttable').toggle();
 	});
+	
 });

@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 <script type="text/javascript" src="index.js"></script> 
 
-<title>Insert title here</title>
+<title>Student Home</title>
 </head>
 <body>
 <%
@@ -26,7 +26,7 @@ if(request.getAttribute("id")==null){
 </table><br><br>
 <input type="text" id="sid" value="${id}" hidden>
 <button id="showresult">Result</button>
-<br>
+<br><br>
 <table border="1px" id="resulttable">
 
 </table>

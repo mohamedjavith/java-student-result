@@ -20,7 +20,7 @@
 <div id="studentLogin">
 <form action="fetchdata" method="post">
 <h1>Student Login</h1>
-	<center><label id="loginerror"></label></center><br>
+	<center><label id="loginerror"> </label></center><br>
     <label for="fname">Student Id</label>
     <input type="text" id="sid" name="sid" placeholder="Enter Student Id">
 
