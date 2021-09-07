@@ -9,6 +9,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+if(session.getAttribute("staffid")!=null){
+	response.sendRedirect("staffhomepage");
+}else{
+%>
 	<!-- Nav Bar -->
 <ul>
   <li><a  href="home.jsp">Home</a></li>
@@ -28,6 +33,9 @@
   	
   	<button id="studentLoginSubmit" type="submit">Submit</button>
   	</form>
+  	<%
+}
+  	%>
  </div>
 </body>
 </html>

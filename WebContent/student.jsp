@@ -10,6 +10,12 @@
 <title>Student Login</title>
 </head>
 <body>
+<%
+if(session.getAttribute("sid")!=null){
+	response.sendRedirect("fetchdata");
+}else{
+	
+%>
 	<!-- Nav Bar -->
 <ul>
   <li><a  href="home.jsp">Home</a></li>
@@ -25,10 +31,14 @@
     <input type="text" id="sid" name="sid" placeholder="Enter Student Id">
 
     <label for="lname">Password</label>
-    <input type="password" id="password" name="password" placeholder="Enter Password..">
+    <input type="password" id="password" name="key" placeholder="Enter Password..">
   	
   	<button id="studentLoginSubmit" type="submit">Submit</button>
   	</form>
+  	
+  	<%
+}
+  	%>
  </div>
 </body>
 </html>
